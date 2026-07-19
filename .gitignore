@@ -1,0 +1,9 @@
+# Ignore XAMPP system/backup files
+xampp_backup/
+logs/
+temp/
+
+# Ignore IDE files
+.vscode/
+.idea/
+

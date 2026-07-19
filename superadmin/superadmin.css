@@ -1,0 +1,46 @@
+/* ============================================================
+   superadmin.css – Super Admin specific overrides
+   ============================================================ */
+
+/* Super Admin tile grid – wider to accommodate more tiles */
+.sa-portal-grid {
+    max-width: 920px;
+}
+
+/* Super Admin exclusive tile accent */
+.sa-tile .portal-tile-inner {
+    border-color: rgba(26, 158, 117, 0.18);
+}
+
+.sa-tile:hover .portal-tile-inner {
+    border-color: rgba(26, 158, 117, 0.4);
+    box-shadow: 0 8px 32px rgba(26, 158, 117, 0.12);
+}
+
+/* SVG icons used in SA tiles */
+.sa-svg-icon {
+    width: 38px;
+    height: 38px;
+    stroke: var(--hp-primary, #1a9e75);
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.sa-tile:hover .sa-svg-icon {
+    opacity: 1;
+}
+
+/* Super Admin badge label */
+.sa-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--hp-primary, #1a9e75);
+    background: var(--hp-primary-muted, rgba(26, 158, 117, 0.12));
+    border: 1px solid var(--hp-primary-border, rgba(26, 158, 117, 0.25));
+    border-radius: var(--hp-radius-pill, 999px);
+    padding: 2px 10px;
+    margin-top: 6px;
+}
