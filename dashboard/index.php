@@ -32,25 +32,39 @@ $username = $previewMode ? 'Developer' : ($_SESSION['username'] ?? 'User');
             font-size: 14px;
             text-decoration: none;
             font-weight: 700;
-            background: linear-gradient(135deg, #0d9373, #2ee8b7, #00d4aa);
-            color: #0a1a12;
-            border: none;
+            background: transparent;
+            color: var(--hp-text);
+            border: 2px solid var(--hp-border-strong);
             border-radius: 6px;
             cursor: pointer;
             letter-spacing: 0.02em;
-            box-shadow: 0 2px 14px rgba(46, 232, 183, 0.3);
             transition: all 0.3s ease;
             position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .landing-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, #00b4d2, #2ee8b7);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
         .landing-btn:hover {
-            box-shadow: 0 0 20px rgba(46, 232, 183, 0.5), 0 0 40px rgba(46, 232, 183, 0.25), 0 0 60px rgba(46, 232, 183, 0.1);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 0 20px rgba(46, 232, 183, 0.4), 0 0 40px rgba(0, 180, 210, 0.2);
             transform: translateY(-2px);
-            background: linear-gradient(135deg, #10b888, #3df5c8, #00e8bb);
+        }
+        .landing-btn:hover::before {
+            opacity: 1;
         }
         .landing-btn:active {
-            transform: scale(0.92);
-            box-shadow: 0 0 10px rgba(46, 232, 183, 0.4);
-            transition: all 0.08s ease;
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(46, 232, 183, 0.3);
+            transition: all 0.1s ease;
         }
     </style>
 </head>
