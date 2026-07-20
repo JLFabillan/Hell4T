@@ -34,27 +34,43 @@ $username = $previewMode ? 'Developer' : ($_SESSION['username'] ?? 'User');
             font-weight: 700;
             background: transparent;
             color: var(--hp-primary);
-            border: 3px solid var(--hp-primary);
+            border: none; /* Removed solid border */
             border-radius: 6px;
             cursor: pointer;
             letter-spacing: 0.02em;
             transition: all 0.3s ease;
             position: relative;
             z-index: 1;
-            overflow: hidden;
+            /* overflow: hidden; Removed because we need the ::after border to not get clipped weirdly if box-shadow is added, though it's fine. */
         }
+        /* Gradient Border */
+        .landing-btn::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 6px;
+            padding: 3px; /* Stroke thickness */
+            background: linear-gradient(135deg, #00b4d2, #2ee8b7);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        /* Gradient Fill on Hover */
         .landing-btn::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 6px;
             background: linear-gradient(135deg, #00b4d2, #2ee8b7);
-            z-index: -1;
+            z-index: -2;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
         .landing-btn:hover {
             color: #fff;
-            border-color: transparent;
             box-shadow: 0 0 20px rgba(46, 232, 183, 0.4), 0 0 40px rgba(0, 180, 210, 0.2);
             transform: translateY(-2px);
         }
