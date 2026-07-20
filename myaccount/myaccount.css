@@ -98,6 +98,7 @@ html, body {
     font-size: 14px;
     outline: none;
     box-shadow: none;
+    backdrop-filter: blur(8px);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -548,6 +549,35 @@ input[type="datetime-local"].form-field-input {
     color-scheme: dark;
 }
 
+/* ---------- File Input Button ---------- */
+input[type="file"].form-field-input {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+input[type="file"].form-field-input::file-selector-button {
+    background: var(--hp-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--hp-radius-sm);
+    padding: 6px 14px;
+    font-family: var(--hp-font);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+input[type="file"].form-field-input::file-selector-button:hover {
+    background: var(--hp-primary-hover);
+    transform: translateY(-1px);
+}
+
+[data-theme="light"] input[type="file"].form-field-input {
+    color: #374151;
+}
+
 .scheduled-queue-container {
     margin-top: 32px;
     padding-top: 24px;
@@ -578,7 +608,7 @@ input[type="datetime-local"].form-field-input {
 }
 
 .queue-table th {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--hp-surface-hover);
     color: var(--hp-text-secondary);
     font-weight: 600;
     padding: 10px 14px;

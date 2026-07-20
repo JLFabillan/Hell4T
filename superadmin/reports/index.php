@@ -177,8 +177,8 @@ $sidebarSections = [
             <!-- Tab: Master Transaction Log -->
             <div id="tab-transactions" class="tab-content">
                 <div style="display: flex; justify-content: flex-end; gap: 12px; margin-bottom: 16px;">
-                    <button type="button" class="send-sms-btn" style="width: auto; padding: 0 16px; background: rgba(255,255,255,0.1); color: var(--hp-text);">Export CSV</button>
-                    <button type="button" class="send-sms-btn" style="width: auto; padding: 0 16px; background: rgba(255,255,255,0.1); color: var(--hp-text);">Export Excel</button>
+                    <button type="button" class="send-sms-btn" style="width: auto; padding: 0 16px; background: var(--hp-surface-hover); color: var(--hp-text); border: 1px solid var(--hp-border);">Export CSV</button>
+                    <button type="button" class="send-sms-btn" style="width: auto; padding: 0 16px; background: var(--hp-surface-hover); color: var(--hp-text); border: 1px solid var(--hp-border);">Export Excel</button>
                 </div>
                 <table class="queue-table">
                     <thead>
@@ -272,7 +272,7 @@ $sidebarSections = [
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px;">
-                    <div style="background: rgba(255,255,255,0.03); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+                    <div style="background: var(--hp-surface-hover); padding: 24px; border-radius: 12px; border: 1px solid var(--hp-border); text-align: center;">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 32px; height: 32px; color: #ff5252; margin-bottom: 12px; display: inline-block;">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
@@ -280,19 +280,19 @@ $sidebarSections = [
                             <line x1="16" y1="17" x2="8" y2="17"></line>
                             <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
-                        <h3 style="font-size: 15px; color: #fff; margin: 0 0 8px;">PDF Summary Report</h3>
+                        <h3 style="font-size: 15px; color: var(--hp-text); margin: 0 0 8px;">PDF Summary Report</h3>
                         <p style="font-size: 13px; color: var(--hp-text-secondary); margin: 0 0 16px;">Visual report of system-wide usage and performance.</p>
                         <button class="send-sms-btn" style="width: auto; padding: 8px 24px; font-size: 13px;">Download PDF</button>
                     </div>
 
-                    <div style="background: rgba(255,255,255,0.03); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+                    <div style="background: var(--hp-surface-hover); padding: 24px; border-radius: 12px; border: 1px solid var(--hp-border); text-align: center;">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 32px; height: 32px; color: #4ade80; margin-bottom: 12px; display: inline-block;">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="12" y1="18" x2="12" y2="12"></line>
                             <line x1="9" y1="15" x2="15" y2="15"></line>
                         </svg>
-                        <h3 style="font-size: 15px; color: #fff; margin: 0 0 8px;">Raw CSV Logs</h3>
+                        <h3 style="font-size: 15px; color: var(--hp-text); margin: 0 0 8px;">Raw CSV Logs</h3>
                         <p style="font-size: 13px; color: var(--hp-text-secondary); margin: 0 0 16px;">Detailed, row-by-row data extract of system activity.</p>
                         <button class="send-sms-btn" style="width: auto; padding: 8px 24px; font-size: 13px; background: rgba(74, 222, 128, 0.2); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.4);">Download CSV</button>
                     </div>

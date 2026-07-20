@@ -59,11 +59,11 @@
     --hp-bg:             #f5f7f6;
     --hp-surface:        rgba(255, 255, 255, 0.95);
     --hp-surface-raised: #ffffff;
-    --hp-surface-input:  #ffffff;
+    --hp-surface-input:  rgba(255, 255, 255, 0.15);
     --hp-surface-hover:  rgba(0, 0, 0, 0.03);
-    --hp-text:           #000000;
-    --hp-text-secondary: #000000;
-    --hp-text-muted:     #000000;
+    --hp-text:           #111827;
+    --hp-text-secondary: #374151;
+    --hp-text-muted:     #6b7280;
     --hp-border:         rgba(0, 0, 0, 0.08);
     --hp-border-strong:  rgba(0, 0, 0, 0.14);
     --hp-shadow-sm:      0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
@@ -80,9 +80,9 @@
     --formal-surface:     #ffffff;
     --formal-border:      rgba(0, 0, 0, 0.08);
     --formal-border-sub:  rgba(0, 0, 0, 0.05);
-    --formal-text:        #000000;
-    --formal-text-sub:    #000000;
-    --formal-text-muted:  #000000;
+    --formal-text:        #111827;
+    --formal-text-sub:    #374151;
+    --formal-text-muted:  #6b7280;
     --formal-glow-green:  rgba(26, 158, 117, 0.1);
     --formal-glow-cyan:   rgba(0, 160, 190, 0.07);
 

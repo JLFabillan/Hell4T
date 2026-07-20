@@ -94,7 +94,7 @@ $username = $previewMode ? 'Developer' : ($_SESSION['username'] ?? 'User');
                                     />
                                 </div>
                             </div>
-                            <p style="font-size: 12px; color: rgba(210, 255, 240, 0.6); margin: 0; line-height: 1.4;">
+                            <p style="font-size: 12px; color: var(--hp-text-secondary); margin: 0; line-height: 1.4;">
                                 <strong>CSV Format Guideline:</strong> The file must contain a single column with a header named <strong>MobileNumber</strong>. Each row below the header should contain one valid mobile number.
                             </p>
                         </div>
@@ -200,7 +200,7 @@ $username = $previewMode ? 'Developer' : ($_SESSION['username'] ?? 'User');
                                     />
                                 </div>
                             </div>
-                            <p style="font-size: 12px; color: rgba(210, 255, 240, 0.6); margin: 0; line-height: 1.4;">
+                            <p style="font-size: 12px; color: var(--hp-text-secondary); margin: 0; line-height: 1.4;">
                                 <strong>CSV Format Guideline:</strong> The file must contain a single column with a header named <strong>MobileNumber</strong>. Each row below the header should contain one valid mobile number.
                             </p>
                         </div>

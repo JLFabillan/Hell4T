@@ -112,9 +112,9 @@ foreach ($tabs as $id => $tab) {
                                             </label>
                                         </td>
                                         <td>John Doe (Admin)</td>
-                                        <td><span style="color: #2ee8b7;">Import</span></td>
-                                        <td>+5,000</td>
-                                        <td>15,000</td>
+                                        <td><span style="color: var(--hp-primary);">Import</span></td>
+                                        <td style="color: var(--hp-text);">+5,000</td>
+                                        <td style="color: var(--hp-text);">15,000</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -125,8 +125,8 @@ foreach ($tabs as $id => $tab) {
                                         </td>
                                         <td>Jane Smith (Admin)</td>
                                         <td><span style="color: #ff9f43;">Allocation</span></td>
-                                        <td>-1,000</td>
-                                        <td>4,000</td>
+                                        <td style="color: var(--hp-text);">-1,000</td>
+                                        <td style="color: var(--hp-text);">4,000</td>
                                     </tr>
                                 </tbody>
                             </table>
