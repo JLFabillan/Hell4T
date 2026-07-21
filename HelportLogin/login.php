@@ -4,7 +4,7 @@ session_start();
 require_once __DIR__ . '/../db.php';
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: /myaccount/index.php');
+    header('Location: ../myaccount/index.php');
     exit();
 }
 
@@ -30,8 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_id']  = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['role']     = $user['role'] ?? 'admin';
-
-            header('Location: /myaccount/index.php');
+            header('Location: ../myaccount/index.php');
             exit();
         } else {
             $error = 'Invalid username or password.';

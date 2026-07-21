@@ -6,7 +6,7 @@ $previewMode = isset($_GET['preview']) && $_GET['preview'] === 'true';
 $isLoggedIn = isset($_SESSION['user_id']) || $previewMode;
 
 if ($isLoggedIn) {
-    header('Location: /myaccount/index.php');
+    header('Location: ../myaccount/index.php');
     exit();
 }
 
